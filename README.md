@@ -39,3 +39,4 @@ iOS_TIMChat (注意阅读ReadMe) : https://github.com/zhaoyang21cn/iOS_TIMChat
 ![spear配置](https://raw.githubusercontent.com/zhaoyang21cn/iOS_Suixinbo/master/InteractGuest.jpeg)
 互动观众配置：
 ![spear配置](https://raw.githubusercontent.com/zhaoyang21cn/iOS_Suixinbo/master/InteractUser.jpeg)
+

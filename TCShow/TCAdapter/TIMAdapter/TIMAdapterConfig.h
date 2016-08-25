@@ -13,7 +13,7 @@
 // 用户更新为自己的app配置
 // 以及IMSDK相关的配置
 #ifndef kSdkAppId
-#define kSdkAppId       @"1400001692"
+#define kSdkAppId       @"1400013798"//@"1400001692"
 #endif
 
 #ifndef kSdkAccountType
