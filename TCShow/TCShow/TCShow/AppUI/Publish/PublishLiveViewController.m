@@ -206,6 +206,8 @@
     if (lbs && _locationSwitch.on)
     {
         liveRoom.lbs = lbs;
+    }else{
+        liveRoom.lbs = [[LocationItem alloc ]init];
     }
     
     if (_isPublishInteractLive)
