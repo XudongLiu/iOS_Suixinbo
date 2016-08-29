@@ -262,6 +262,11 @@
 		C3A92BCE1D73DD3700A0B74C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A92BCC1D73DD3700A0B74C /* CoreFoundation.framework */; };
 		C3A92BCF1D73DD3700A0B74C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A92BCD1D73DD3700A0B74C /* CoreGraphics.framework */; };
 		C3A92BD11D73DD8800A0B74C /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3A92BD01D73DD8800A0B74C /* PushConfig.plist */; };
+		C3A92BD81D74005200A0B74C /* YPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A92BD31D74005200A0B74C /* YPTabBar.m */; };
+		C3A92BD91D74005200A0B74C /* YPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A92BD51D74005200A0B74C /* YPTabBarController.m */; };
+		C3A92BDA1D74005200A0B74C /* YPTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A92BD71D74005200A0B74C /* YPTabItem.m */; };
+		C3A92BDE1D74011C00A0B74C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A92BDD1D74011C00A0B74C /* MainViewController.m */; };
+		C3A92BE11D74023E00A0B74C /* FixedItemWidthTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A92BE01D74023E00A0B74C /* FixedItemWidthTabController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -812,6 +817,16 @@
 		C3A92BCC1D73DD3700A0B74C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		C3A92BCD1D73DD3700A0B74C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C3A92BD01D73DD8800A0B74C /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
+		C3A92BD21D74005200A0B74C /* YPTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPTabBar.h; path = huofanlib/YPTabBarController/YPTabBar.h; sourceTree = "<group>"; };
+		C3A92BD31D74005200A0B74C /* YPTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPTabBar.m; path = huofanlib/YPTabBarController/YPTabBar.m; sourceTree = "<group>"; };
+		C3A92BD41D74005200A0B74C /* YPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPTabBarController.h; path = huofanlib/YPTabBarController/YPTabBarController.h; sourceTree = "<group>"; };
+		C3A92BD51D74005200A0B74C /* YPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPTabBarController.m; path = huofanlib/YPTabBarController/YPTabBarController.m; sourceTree = "<group>"; };
+		C3A92BD61D74005200A0B74C /* YPTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPTabItem.h; path = huofanlib/YPTabBarController/YPTabItem.h; sourceTree = "<group>"; };
+		C3A92BD71D74005200A0B74C /* YPTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPTabItem.m; path = huofanlib/YPTabBarController/YPTabItem.m; sourceTree = "<group>"; };
+		C3A92BDC1D74011C00A0B74C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C3A92BDD1D74011C00A0B74C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C3A92BDF1D74023E00A0B74C /* FixedItemWidthTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedItemWidthTabController.h; sourceTree = "<group>"; };
+		C3A92BE01D74023E00A0B74C /* FixedItemWidthTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedItemWidthTabController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -885,11 +900,15 @@
 		92562B8B1CBBC4A2007595F9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C3A92BDF1D74023E00A0B74C /* FixedItemWidthTabController.h */,
+				C3A92BE01D74023E00A0B74C /* FixedItemWidthTabController.m */,
 				92BC94351CBDF044003D9EF1 /* MainHeader.h */,
 				92562B911CBBC4A2007595F9 /* LivingListViewController.h */,
 				92562B921CBBC4A2007595F9 /* LivingListViewController.m */,
 				92BC94311CBDEDC0003D9EF1 /* LiveListTableViewCell.h */,
 				92BC94321CBDEDC0003D9EF1 /* LiveListTableViewCell.m */,
+				C3A92BDC1D74011C00A0B74C /* MainViewController.h */,
+				C3A92BDD1D74011C00A0B74C /* MainViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1883,6 +1902,7 @@
 		C330A70D1D70426A00194107 /* houfanlib */ = {
 			isa = PBXGroup;
 			children = (
+				C3A92BDB1D74005B00A0B74C /* YPTabBarController */,
 				C3A92BC61D73DC8700A0B74C /* jiguang */,
 			);
 			name = houfanlib;
@@ -1895,6 +1915,19 @@
 				C3A92BC81D73DC9200A0B74C /* JPUSHService.h */,
 			);
 			name = jiguang;
+			sourceTree = "<group>";
+		};
+		C3A92BDB1D74005B00A0B74C /* YPTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				C3A92BD21D74005200A0B74C /* YPTabBar.h */,
+				C3A92BD31D74005200A0B74C /* YPTabBar.m */,
+				C3A92BD41D74005200A0B74C /* YPTabBarController.h */,
+				C3A92BD51D74005200A0B74C /* YPTabBarController.m */,
+				C3A92BD61D74005200A0B74C /* YPTabItem.h */,
+				C3A92BD71D74005200A0B74C /* YPTabItem.m */,
+			);
+			name = YPTabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2005,6 +2038,7 @@
 				92D2CBB11CC4E4D200501760 /* MoreTableView.m in Sources */,
 				9BD9DD251D34C74700C65BDA /* IMAPlatform+TestSpeed.m in Sources */,
 				929BCA241CBF706800482611 /* TCShowLiveView.m in Sources */,
+				C3A92BDE1D74011C00A0B74C /* MainViewController.m in Sources */,
 				92B7E1E41CF44E480008CC21 /* TCAVSharedContext.m in Sources */,
 				925941C61CC7B76C00227DD7 /* AVIMRunLoop.m in Sources */,
 				92D2CBC41CC4E4D200501760 /* PathUtility.m in Sources */,
@@ -2148,6 +2182,7 @@
 				925A507D1CD0AF75002FF25F /* BaseRequest.m in Sources */,
 				92D2CBF11CC4E4D200501760 /* TCAVLiveRoomEngine.m in Sources */,
 				92D2CC191CC4E4D200501760 /* IMALoginViewController.m in Sources */,
+				C3A92BE11D74023E00A0B74C /* FixedItemWidthTabController.m in Sources */,
 				92562BBC1CBBC4A2007595F9 /* TarBarController.m in Sources */,
 				92D2CBA61CC4E4D200501760 /* UIView+Glow.m in Sources */,
 				92D2CBB41CC4E4D200501760 /* FontHelper.m in Sources */,
@@ -2172,6 +2207,7 @@
 				927600E11CFC1A8B00BA9632 /* TCAVLiveRoomEngine+Record.m in Sources */,
 				92560A7D1CE45F0A00622051 /* ReportHostView.m in Sources */,
 				92D2CBA81CC4E4D200501760 /* UIView+RelativeCoordinate.m in Sources */,
+				C3A92BDA1D74005200A0B74C /* YPTabItem.m in Sources */,
 				92D2CC181CC4E4D200501760 /* IMAAppDelegate.m in Sources */,
 				92D2CBC21CC4E4D200501760 /* NetworkUtility.m in Sources */,
 				92D2CBC01CC4E4D200501760 /* MKNetworkEngine.m in Sources */,
@@ -2180,12 +2216,14 @@
 				92D2CBD71CC4E4D200501760 /* BaseAppDelegate.m in Sources */,
 				92D2CBB31CC4E4D200501760 /* NSObject+FBKVOController.m in Sources */,
 				92D2CBAC1CC4E4D200501760 /* EGORefreshTableHeaderView.m in Sources */,
+				C3A92BD91D74005200A0B74C /* YPTabBarController.m in Sources */,
 				926DEC8F1CF6F34A00F9251B /* TCAVTryItem.m in Sources */,
 				92BC94331CBDEDC0003D9EF1 /* LiveListTableViewCell.m in Sources */,
 				92D2CBDE1CC4E4D200501760 /* LibraryViewController.m in Sources */,
 				92D2CBA21CC4E4D200501760 /* UITextField+UITextField_Tip.m in Sources */,
 				92D2CBF91CC4E4D200501760 /* AVGLShareInstance.m in Sources */,
 				926DEC8C1CF6E73F00F9251B /* TCAVLiveRoomEngine+PushStream.m in Sources */,
+				C3A92BD81D74005200A0B74C /* YPTabBar.m in Sources */,
 				92D2CBEC1CC4E4D200501760 /* UIView+Layout.m in Sources */,
 				92D2CBB01CC4E4D200501760 /* MenuTableViewController.m in Sources */,
 				921DA4CE1CC9C12E007DFE11 /* TCShowMultiSubView.m in Sources */,

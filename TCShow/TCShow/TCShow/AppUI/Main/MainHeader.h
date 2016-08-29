@@ -12,5 +12,6 @@
 #import "LiveListTableViewCell.h"
 
 #import "LivingListViewController.h"
+#import "FixedItemWidthTabController.h"
 
 #endif /* MainHeader_h */

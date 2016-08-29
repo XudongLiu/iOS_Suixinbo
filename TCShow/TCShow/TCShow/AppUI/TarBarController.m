@@ -27,9 +27,14 @@
 #pragma mark 初始化Tab
 - (void)initTabBar
 {
-    //viewcontrollers
-    LivingListViewController *mainvc = [[LivingListViewController alloc] init];
+    //old code
+    //LivingListViewController *mainvc = [[LivingListViewController alloc] init];
+   // NavigationViewController *mainNav = [[NavigationViewController alloc] initWithRootViewController:mainvc];
+    
+    //add new view
+    FixedItemWidthTabController *mainvc =[[FixedItemWidthTabController alloc] init];
     NavigationViewController *mainNav = [[NavigationViewController alloc] initWithRootViewController:mainvc];
+    //mainNav.navigationBarHidden=YES;
     
     UIViewController *second = [[BaseViewController alloc] init];
     
