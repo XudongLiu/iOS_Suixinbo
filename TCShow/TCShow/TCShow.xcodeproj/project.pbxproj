@@ -257,6 +257,11 @@
 		92F850131CF80396006EB63A /* TCShowAVParView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F850121CF80396006EB63A /* TCShowAVParView.m */; };
 		9B0263AD1D4F36E900C7B5DD /* TCAVLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0263AC1D4F36E900C7B5DD /* TCAVLogManager.m */; };
 		9BD9DD251D34C74700C65BDA /* IMAPlatform+TestSpeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9DD241D34C74700C65BDA /* IMAPlatform+TestSpeed.m */; };
+		C3A92BC91D73DC9200A0B74C /* jpush-ios-2.1.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A92BC71D73DC9200A0B74C /* jpush-ios-2.1.8.a */; };
+		C3A92BCB1D73DD1800A0B74C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A92BCA1D73DD1800A0B74C /* CFNetwork.framework */; };
+		C3A92BCE1D73DD3700A0B74C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A92BCC1D73DD3700A0B74C /* CoreFoundation.framework */; };
+		C3A92BCF1D73DD3700A0B74C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A92BCD1D73DD3700A0B74C /* CoreGraphics.framework */; };
+		C3A92BD11D73DD8800A0B74C /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3A92BD01D73DD8800A0B74C /* PushConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -801,6 +806,12 @@
 		9B0263AC1D4F36E900C7B5DD /* TCAVLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAVLogManager.m; sourceTree = "<group>"; };
 		9BD9DD231D34C74700C65BDA /* IMAPlatform+TestSpeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMAPlatform+TestSpeed.h"; sourceTree = "<group>"; };
 		9BD9DD241D34C74700C65BDA /* IMAPlatform+TestSpeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMAPlatform+TestSpeed.m"; sourceTree = "<group>"; };
+		C3A92BC71D73DC9200A0B74C /* jpush-ios-2.1.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "jpush-ios-2.1.8.a"; path = "huofanlib/jiguang/jpush-ios-2.1.8.a"; sourceTree = "<group>"; };
+		C3A92BC81D73DC9200A0B74C /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPUSHService.h; path = huofanlib/jiguang/JPUSHService.h; sourceTree = "<group>"; };
+		C3A92BCA1D73DD1800A0B74C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C3A92BCC1D73DD3700A0B74C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C3A92BCD1D73DD3700A0B74C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C3A92BD01D73DD8800A0B74C /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -808,6 +819,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A92BCE1D73DD3700A0B74C /* CoreFoundation.framework in Frameworks */,
+				C3A92BCF1D73DD3700A0B74C /* CoreGraphics.framework in Frameworks */,
+				C3A92BCB1D73DD1800A0B74C /* CFNetwork.framework in Frameworks */,
 				92DC9D051CBB75C600702263 /* CoreTelephony.framework in Frameworks */,
 				92224AE61CEB12100050404A /* libresolv.tbd in Frameworks */,
 				92DC9D091CBB75D700702263 /* MobileCoreServices.framework in Frameworks */,
@@ -823,6 +837,7 @@
 				9255DEE81D6161700082D553 /* xplatform.framework in Frameworks */,
 				92DC9CFB1CBB758E00702263 /* libc++.tbd in Frameworks */,
 				92DC9CF91CBB758300702263 /* SystemConfiguration.framework in Frameworks */,
+				C3A92BC91D73DC9200A0B74C /* jpush-ios-2.1.8.a in Frameworks */,
 				92DC9CF71CBB757D00702263 /* AVFoundation.framework in Frameworks */,
 				92D2CB911CC4E4D200501760 /* libBlocksKit.a in Frameworks */,
 				92D2CC0F1CC4E4D200501760 /* IMSDKBugly.framework in Frameworks */,
@@ -1802,6 +1817,7 @@
 		92DC9B321CBB59FB00702263 /* TCShow */ = {
 			isa = PBXGroup;
 			children = (
+				C330A70D1D70426A00194107 /* houfanlib */,
 				92D3835C1CDA386C0001EA04 /* TCShow-DailyBuild-Info.plist */,
 				92DC9B361CBB59FB00702263 /* AppDelegate.h */,
 				92DC9B371CBB59FB00702263 /* AppDelegate.m */,
@@ -1820,6 +1836,7 @@
 		92DC9B331CBB59FB00702263 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3A92BD01D73DD8800A0B74C /* PushConfig.plist */,
 				92DC9B341CBB59FB00702263 /* main.m */,
 				92DC9CEB1CBB5A9D00702263 /* TCShow-Prefix.pch */,
 			);
@@ -1829,6 +1846,9 @@
 		92DC9D0A1CBB75E000702263 /* SystemLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				C3A92BCC1D73DD3700A0B74C /* CoreFoundation.framework */,
+				C3A92BCD1D73DD3700A0B74C /* CoreGraphics.framework */,
+				C3A92BCA1D73DD1800A0B74C /* CFNetwork.framework */,
 				92224AE51CEB12100050404A /* libresolv.tbd */,
 				92DC9D081CBB75D700702263 /* MobileCoreServices.framework */,
 				92DC9D061CBB75CE00702263 /* CoreText.framework */,
@@ -1858,6 +1878,23 @@
 				92E20EF61CEEDA3C00DBBAE9 /* UserProtocolViewController.xib */,
 			);
 			path = UP;
+			sourceTree = "<group>";
+		};
+		C330A70D1D70426A00194107 /* houfanlib */ = {
+			isa = PBXGroup;
+			children = (
+				C3A92BC61D73DC8700A0B74C /* jiguang */,
+			);
+			name = houfanlib;
+			sourceTree = "<group>";
+		};
+		C3A92BC61D73DC8700A0B74C /* jiguang */ = {
+			isa = PBXGroup;
+			children = (
+				C3A92BC71D73DC9200A0B74C /* jpush-ios-2.1.8.a */,
+				C3A92BC81D73DC9200A0B74C /* JPUSHService.h */,
+			);
+			name = jiguang;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1931,6 +1968,7 @@
 				92DC9B401CBB59FB00702263 /* Assets.xcassets in Resources */,
 				92D2CC141CC4E4D200501760 /* TLSUI.bundle in Resources */,
 				92D3835D1CDA386C0001EA04 /* TCShow-DailyBuild-Info.plist in Resources */,
+				C3A92BD11D73DD8800A0B74C /* PushConfig.plist in Resources */,
 				92BC94391CBDF3C7003D9EF1 /* default_cover@2x.jpg in Resources */,
 				92E20EF71CEEDA3C00DBBAE9 /* UserProtocol.html in Resources */,
 				92D2CC0B1CC4E4D200501760 /* Localizable.strings in Resources */,
@@ -2278,11 +2316,13 @@
 					"$(SRCROOT)/../TCAdapter/TIMAdapter/Framework/WXApi",
 					"$(PROJECT_DIR)/TCShowModel/QCloudUploadSDK",
 					"$(SRCROOT)/TCShowModel/QCloudUploadSDK",
+					"$(PROJECT_DIR)/TCShow/huofanlib/GtSdkLib",
+					"$(PROJECT_DIR)/TCShow/huofanlib/jiguang",
 				);
 				OTHER_CFLAGS = "-O0";
 				OTHER_CPLUSPLUSFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo6s;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.bjlmjc.huofan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2394,8 +2434,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: xudong liu (25GMHF845B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xudong liu (25GMHF845B)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2415,14 +2455,16 @@
 					"$(SRCROOT)/../TCAdapter/TIMAdapter/Framework/WXApi",
 					"$(PROJECT_DIR)/TCShowModel/QCloudUploadSDK",
 					"$(SRCROOT)/TCShowModel/QCloudUploadSDK",
+					"$(PROJECT_DIR)/TCShow/huofanlib/GtSdkLib",
+					"$(PROJECT_DIR)/TCShow/huofanlib/jiguang",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-O0";
 				OTHER_CPLUSPLUSFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo6s;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.bjlmjc.huofan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f863e4dc-7ca1-41cb-b396-a4275c8c235c";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2453,11 +2495,13 @@
 					"$(SRCROOT)/../TCAdapter/TIMAdapter/Framework/WXApi",
 					"$(PROJECT_DIR)/TCShowModel/QCloudUploadSDK",
 					"$(SRCROOT)/TCShowModel/QCloudUploadSDK",
+					"$(PROJECT_DIR)/TCShow/huofanlib/GtSdkLib",
+					"$(PROJECT_DIR)/TCShow/huofanlib/jiguang",
 				);
 				OTHER_CFLAGS = "-O0";
 				OTHER_CPLUSPLUSFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo6s;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.bjlmjc.huofan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

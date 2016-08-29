@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+static NSString *appKey = @"d75d65be351fde117b2ebeda";
+static NSString *channel = @"App Store";
+static BOOL isProduction = FALSE;
 
-@interface AppDelegate : IMAAppDelegate
+@interface AppDelegate : IMAAppDelegate 
 
 
 @end
