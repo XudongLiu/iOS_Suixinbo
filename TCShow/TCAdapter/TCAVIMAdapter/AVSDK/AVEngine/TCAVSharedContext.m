@@ -68,11 +68,11 @@ static TCAVSharedContext *kSharedConext = nil;
         
         [context startContextwithConfig:config andblock:^(QAVResult result) {
             
+            [TCAVSharedContext sharedInstance].sharedContext = context;
             if (block)
             {
                 block();
             }
-            [TCAVSharedContext sharedInstance].sharedContext = context;
             DebugLog(@"共享的QAVContext = %p result = %d", context, (int)result);
         }];
         

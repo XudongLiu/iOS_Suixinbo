@@ -159,7 +159,10 @@
     {
         fid = [_currentUser imUserId];
     }
-    [_livePreview render:frame mirrorReverse:[engine isFrontCamera] fullScreen:[_multiManager isMainUserByID:fid]];
+    
+//    TCAVMultiLivePreview *preview = (TCAVMultiLivePreview *)_livePreview;
+//    [_livePreview render:frame isHost:[engine isHostLive] mirrorReverse:[engine isFrontCamera] isFullScreen:[_multiManager isMainUserByID:fid]];
+    [_livePreview render:frame roomEngine:engine fullScreen:[_multiManager isMainUserByID:fid]];
 }
 
 - (void)onAVEngine:(TCAVBaseRoomEngine *)engine users:(NSArray *)users exitRoom:(id<AVRoomAble>)room

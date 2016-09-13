@@ -94,7 +94,7 @@
     _openQQ = nil;
     [[IMAAppDelegate sharedAppDelegate] enterMainUI];
     
-    [[IMAPlatform sharedInstance] configOnLoginSucc:_loginParam];
+    [[IMAPlatform sharedInstance] configOnLoginSucc:_loginParam completion:nil];
 }
 
 - (void)loginWith:(TLSUserInfo *)userinfo

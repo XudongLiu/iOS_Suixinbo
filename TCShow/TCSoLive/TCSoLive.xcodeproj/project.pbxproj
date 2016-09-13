@@ -217,6 +217,7 @@
 		9BCEBF691D4B0AA5007348E5 /* LiveUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCEBF641D4B0AA5007348E5 /* LiveUIView.m */; };
 		9BEED4EC1D3CE3C200958E20 /* TCSoMsgHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEED4EB1D3CE3C200958E20 /* TCSoMsgHandler.m */; };
 		9BEED4EF1D3CFC8000958E20 /* TCSoLiveRoomEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEED4EE1D3CFC8000958E20 /* TCSoLiveRoomEngine.m */; };
+		9BFB642C1D780B5500EF5479 /* AVGLCustomRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB642B1D780B5500EF5479 /* AVGLCustomRenderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -695,6 +696,8 @@
 		9BEED4EB1D3CE3C200958E20 /* TCSoMsgHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSoMsgHandler.m; sourceTree = "<group>"; };
 		9BEED4ED1D3CFC8000958E20 /* TCSoLiveRoomEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSoLiveRoomEngine.h; sourceTree = "<group>"; };
 		9BEED4EE1D3CFC8000958E20 /* TCSoLiveRoomEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSoLiveRoomEngine.m; sourceTree = "<group>"; };
+		9BFB642A1D780B5500EF5479 /* AVGLCustomRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLCustomRenderView.h; sourceTree = "<group>"; };
+		9BFB642B1D780B5500EF5479 /* AVGLCustomRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGLCustomRenderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1410,6 +1413,7 @@
 		9B54767C1D48AED700DC06A6 /* AVViews */ = {
 			isa = PBXGroup;
 			children = (
+				9BFB64291D780B5500EF5479 /* CustomAVOpenGL */,
 				9B54767D1D48AED700DC06A6 /* AVPreview */,
 				9B5476851D48AED700DC06A6 /* AVUI */,
 				9B54768E1D48AED700DC06A6 /* AVViewHeader.h */,
@@ -1682,6 +1686,15 @@
 			path = LiveUIView;
 			sourceTree = "<group>";
 		};
+		9BFB64291D780B5500EF5479 /* CustomAVOpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				9BFB642A1D780B5500EF5479 /* AVGLCustomRenderView.h */,
+				9BFB642B1D780B5500EF5479 /* AVGLCustomRenderView.m */,
+			);
+			path = CustomAVOpenGL;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1839,6 +1852,7 @@
 				9B5477401D48AED700DC06A6 /* RefreshView.m in Sources */,
 				9B5476FE1D48AED700DC06A6 /* UIView+CaptureImage.m in Sources */,
 				9B54771C1D48AED700DC06A6 /* MKNetworkOperation.m in Sources */,
+				9BFB642C1D780B5500EF5479 /* AVGLCustomRenderView.m in Sources */,
 				9B54771A1D48AED700DC06A6 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
 				9B5476F61D48AED700DC06A6 /* NSString+Common.m in Sources */,
 				9B54775E1D48AED700DC06A6 /* TCAVFrameDispatcher.m in Sources */,
@@ -2064,7 +2078,7 @@
 					"$(SRCROOT)/../CommonLibrary/BlocksKit",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo6s;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo8s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -2093,7 +2107,7 @@
 					"$(SRCROOT)/../CommonLibrary/BlocksKit",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo6s;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo8s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

@@ -54,6 +54,8 @@
 - (void)dealloc
 {
     DebugLog(@"[%@] : %p 释放成功", [self class], self);
+    _frameDispatcher.imageView = nil;
+    _frameDispatcher = nil;
     [self stopPreview];
     [_imageView destroyOpenGL];
     _imageView = nil;
@@ -181,11 +183,11 @@
     _imageView.frame = self.bounds;
     
     NSString *uid = [user imUserId];
-    AVGLRenderView *glView = [_imageView getSubviewForKey:uid];
+    AVGLCustomRenderView *glView = (AVGLCustomRenderView *)[_imageView getSubviewForKey:uid];
     
     if (!glView)
     {
-        glView = [[AVGLRenderView alloc] initWithFrame:_imageView.bounds];
+        glView = [[AVGLCustomRenderView alloc] initWithFrame:_imageView.bounds];
         [_imageView addSubview:glView forKey:uid];
     }
     else
@@ -208,15 +210,15 @@
 
 - (void)updateRenderFor:(id<AVMultiUserAble>)user
 {
-    AVGLRenderView *view = [_imageView getSubviewForKey:[user imUserId]];
+    AVGLCustomRenderView *view = (AVGLCustomRenderView *)[_imageView getSubviewForKey:[user imUserId]];
     if (!view)
     {
         [self addRenderFor:user];
     }
 }
 
-- (void)render:(QAVVideoFrame *)frame mirrorReverse:(BOOL)reverse fullScreen:(BOOL)fullShow
-{    
+- (void)render:(QAVVideoFrame *)frame roomEngine:(TCAVBaseRoomEngine *)engine fullScreen:(BOOL)fullShow
+{
     if ([_imageView isDisplay])
     {
         BOOL isLocal = frame.identifier.length == 0;
@@ -226,9 +228,30 @@
             frame.identifier = [[IMAPlatform sharedInstance].host imUserId];
         }
         
-        [_frameDispatcher dispatchVideoFrame:frame isLocal:isLocal isFront:reverse isFull:fullShow];
+        [_frameDispatcher dispatchVideoFrame:frame roomEngine:engine isLocal:isLocal isFull:fullShow];
     }
 }
+
+//- (void)render:(QAVVideoFrame *)frame mirrorReverse:(BOOL)reverse fullScreen:(BOOL)fullShow
+//{    
+//    if ([_imageView isDisplay])
+//    {
+//        BOOL isLocal = frame.identifier.length == 0;
+//        if (isLocal)
+//        {
+//            // 为多人的时候要处理
+//            frame.identifier = [[IMAPlatform sharedInstance].host imUserId];
+//        }
+//        
+////        [_frameDispatcher dispatchVideoFrame:frame isLocal:isLocal isFront:reverse isFull:fullShow];
+//    }
+//}
+//
+//- (void)render:(QAVVideoFrame *)frame isHost:(BOOL)isHost mirrorReverse:(BOOL)reverse isFullScreen:(BOOL)isFullScreen
+//{
+//    //do nothing
+//    //子类重写
+//}
 
 - (void)relayoutFrameOfSubViews
 {

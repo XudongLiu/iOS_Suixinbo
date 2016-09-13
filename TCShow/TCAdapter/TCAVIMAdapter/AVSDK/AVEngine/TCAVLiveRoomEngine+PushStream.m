@@ -429,7 +429,7 @@ static NSString *const kTCAVLiveRoomEnginePushingMap = @"kTCAVLiveRoomEnginePush
             if (completion)
             {
                 NSString *tipFormat = TAVLocalizedError(ETCAVLiveRoomEngine_StopPushStream_Format_Fail_Tip);
-                completion(YES, [NSString stringWithFormat:tipFormat, tip]);
+                completion(NO, [NSString stringWithFormat:tipFormat, tip]);
             }
             [ws.pushingMap removeObjectForKey:@(item.tryIndex)];
         }];

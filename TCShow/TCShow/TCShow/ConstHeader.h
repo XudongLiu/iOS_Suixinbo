@@ -55,5 +55,11 @@
 // 为0时，只显示直播，为1时直播与互动都显示
 #define kSupportMultiLive 1
 
+//渲染界面旋转模式
+//自动校正:      ILiveRotation_Auto = 0,
+//始终全屏显示:   ILiveRotation_FullScreen = 1,
+//剪裁校正:      ILiveRotation_Crop = 2,
+
+#define kAVGLCustomRenderViewRotateMode 1
 
 #endif /* ConstHeader_h */

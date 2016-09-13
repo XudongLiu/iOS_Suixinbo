@@ -97,6 +97,7 @@
 // 创建建房间成功，并且在前台
 // 主要用于进入房间后的操作audioctrl以及videoctrl的判断，在YES时，才能操作audioctrl以及videoctrl
 - (BOOL)isRoomRunning;
+- (BOOL)isRoomAlive;
 
 // 是否是前置摄像头
 - (BOOL)isFrontCamera;

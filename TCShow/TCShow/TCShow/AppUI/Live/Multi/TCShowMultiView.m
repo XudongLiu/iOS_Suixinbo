@@ -11,7 +11,6 @@
 @implementation TCShowMultiView
 
 
-
 - (void)inviteInteractWith:(id<AVMultiUserAble>)user
 {
     if (!user)
@@ -77,8 +76,7 @@
     frame.size.height += newSize.height + kDefaultMargin;
     frame.size = newSize;
     
-    self.frame = frame;
-    [self layoutSubviews];
+    [self setFrameAndLayout:frame];
 }
 
 
@@ -116,27 +114,6 @@
     return renderView;
 }
 
-//- (void)replaceRender:(TCShowMultiSubView *)render with:(TCShowMultiSubView *)mainrender
-//{
-//    if ([_renderViews containsObject:render] && mainrender)
-//    {
-//        if (render.superview)
-//        {
-//            [render removeFromSuperview];
-//        }
-//        [_renderViews removeObject:render];
-//        
-//        if (mainrender.superview)
-//        {
-//            [mainrender removeFromSuperview];
-//        }
-//        
-//        mainrender.frame = render.frame;
-//        [self addSubview:mainrender];
-//        [_renderViews addObject:mainrender];
-//    }
-//}
-
 - (void)cancelInteractWith:(id<AVMultiUserAble>)user
 {
     if (!user)
@@ -167,20 +144,18 @@
 
 - (CGSize)viewSize
 {
-    const CGSize size = kTCShowMultiSubViewSize;
+    const CGSize size = kTCInteractSubViewVerticalSize;
     
     return CGSizeMake(size.width, kMargin + _multiOverlays.count * (kMargin + size.height));
 }
 
 
-- (void)layoutSubviews
+- (void)relayoutFrameOfSubViews
 {
-    [super layoutSubviews];
-    
     CGRect rect = self.bounds;
     rect = CGRectInset(rect, 0, kDefaultMargin);
-    const CGSize size = kTCShowMultiSubViewSize;
-    CGRect subRect = CGRectMake(rect.origin.x, rect.origin.y, size.width, size.height);
+    const CGSize size = kTCInteractSubViewVerticalSize;
+    CGRect subRect = CGRectMake(rect.origin.x+(size.height-size.width), rect.origin.y, size.width, size.height);
     
     for (TCShowMultiSubView *renderView in _multiOverlays)
     {
@@ -189,7 +164,6 @@
         subRect.origin.y += subRect.size.height + kMargin;
     }
 }
-
 
 - (void)onMultiSubViewInviteTimeout:(TCShowMultiSubView *)sub
 {

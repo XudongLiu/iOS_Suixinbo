@@ -252,7 +252,7 @@ static NSString *const kTCAVLiveRoomEngineRecordTryItem = @"kTCAVLiveRoomEngineR
             TIMLog(@"停止录制 (code = %d, err = %@)", code, err);
             if (completion)
             {
-                completion(YES, req);
+                completion(NO, req);
             }
             ws.recordTryItem = nil;
         }];

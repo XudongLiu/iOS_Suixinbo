@@ -41,7 +41,10 @@
 
 - (void)removeRenderOf:(id<IMUserAble>)user;
 
-- (void)render:(QAVVideoFrame *)frame mirrorReverse:(BOOL)reverse fullScreen:(BOOL)fullShow;
+- (void)render:(QAVVideoFrame *)frame roomEngine:(TCAVBaseRoomEngine *)engine fullScreen:(BOOL)fullShow;
+//- (void)render:(QAVVideoFrame *)frame mirrorReverse:(BOOL)reverse fullScreen:(BOOL)fullShow;
+//
+//- (void)render:(QAVVideoFrame *)frame isHost:(BOOL)isHost mirrorReverse:(BOOL)reverse isFullScreen:(BOOL)isFullScreen;
 
 // 开始预览
 - (void)startPreview;

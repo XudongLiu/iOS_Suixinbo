@@ -206,6 +206,11 @@
     return _isRoomAlive && _isAtForeground;
 }
 
+- (BOOL)isRoomAlive
+{
+    return _isRoomAlive;
+}
+
 - (BOOL)isFrontCamera
 {
     return [_avContext.videoCtrl isFrontcamera];

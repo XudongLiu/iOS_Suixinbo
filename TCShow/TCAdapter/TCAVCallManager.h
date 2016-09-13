@@ -13,7 +13,6 @@
 @interface TCAVCallManager : TCAVIMMIManager
 
 // 将用户添加并显示
-// 如果当
 - (void)addRenderAndRequest:(NSArray *)imusers;
 
 @end

@@ -24,7 +24,7 @@
 // 用newUser的画面显示到user上，newUser原来所占位置被移除
 - (BOOL)replaceRender:(id<AVMultiUserAble>)user withUser:(id<AVMultiUserAble>)newUser;
 
-- (void)render:(QAVVideoFrame *)frame ofUser:(id<AVMultiUserAble>)user mirrorReverse:(BOOL)reverse isFullScreen:(BOOL)isFullScreen;
+//- (void)render:(QAVVideoFrame *)frame ofUser:(id<AVMultiUserAble>)user mirrorReverse:(BOOL)reverse isFullScreen:(BOOL)isFullScreen;
 
 @end
 

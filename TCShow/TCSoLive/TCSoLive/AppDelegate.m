@@ -37,7 +37,7 @@
         _liveRoom.liveHost = _liveHost;
     }
     MainViewController *vc = [[MainViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    NavigationViewController *nav = [[NavigationViewController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
 }
 

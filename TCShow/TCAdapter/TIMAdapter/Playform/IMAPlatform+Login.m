@@ -99,10 +99,10 @@
 }
 
 */
-- (void)configOnLoginSucc:(TIMLoginParam *)param
+- (void)configOnLoginSucc:(TIMLoginParam *)param completion:(CommonVoidBlock)block
 {
     // 配置, 获取个人名片
-    [self configHost:param];
+    [self configHost:param completion:block];
     
     // 获取好友列表
     //不能在登录成功之后获取好友里表，需要在OnProxyStatusChange回调成功的时候获取好友列表，否则可能获取不到

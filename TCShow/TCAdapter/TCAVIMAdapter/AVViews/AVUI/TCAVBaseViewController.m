@@ -363,6 +363,11 @@ static BOOL kIsAlertingForceOfflineOnLiving = NO;
     [self onEnterLiveSucc:succ tipInfo:tip];
 }
 
+- (void)onAVEngine:(TCAVBaseRoomEngine *)engine disConnect:(id<AVRoomAble>)room
+{
+    // do nothing
+}
+
 - (void)onAVEngine:(TCAVBaseRoomEngine *)engine switchRoom:(id<AVRoomAble>)room succ:(BOOL)succ tipInfo:(NSString *)tip
 {
     if (!succ)

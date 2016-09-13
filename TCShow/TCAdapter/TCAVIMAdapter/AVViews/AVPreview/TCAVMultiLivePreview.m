@@ -41,11 +41,11 @@
         _imageView.frame = self.bounds;
         
         NSString *uid = [user imUserId];
-        AVGLRenderView *glView = [_imageView getSubviewForKey:uid];
+        AVGLCustomRenderView *glView = (AVGLCustomRenderView *)[_imageView getSubviewForKey:uid];
         
         if (!glView)
         {
-            glView = [[AVGLRenderView alloc] initWithFrame:_imageView.bounds];
+            glView = [[AVGLCustomRenderView alloc] initWithFrame:_imageView.bounds];
             [_imageView addSubview:glView forKey:uid];
         }
         else
@@ -62,7 +62,7 @@
         CGRect rect = [user avInteractArea];
         if (!CGRectIsEmpty(rect))
         {
-            [glView setFrame:[user avInteractArea]];
+            [glView setFrame:rect];
         }
         
         if (![_imageView isDisplay])
@@ -77,7 +77,7 @@
 {
     for (id<AVMultiUserAble> user in users)
     {
-        AVGLRenderView *glView = [_imageView getSubviewForKey:[user imUserId]];
+        AVGLCustomRenderView *glView = (AVGLCustomRenderView *)[_imageView getSubviewForKey:[user imUserId]];
         if (glView)
         {
             CGRect rect = [user avInteractArea];
@@ -89,7 +89,7 @@
 
 - (void)updateRenderFor:(id<AVMultiUserAble>)user
 {
-    AVGLRenderView *view = [_imageView getSubviewForKey:[user imUserId]];
+    AVGLCustomRenderView *view = (AVGLCustomRenderView *)[_imageView getSubviewForKey:[user imUserId]];
     if (!view)
     {
         [self addRenderFor:user];
@@ -105,21 +105,35 @@
     }
 }
 
-- (void)render:(QAVVideoFrame *)frame ofUser:(id<AVMultiUserAble>)user mirrorReverse:(BOOL)reverse isFullScreen:(BOOL)isFullScreen
-{
-    if ([_imageView isDisplay])
-    {
-        BOOL isLocal = frame.identifier.length;
-        if (isLocal)
-        {
-            // 为多人的时候要处理
-            frame.identifier = [[IMAPlatform sharedInstance].host imUserId];
-        }
-        
-        [_frameDispatcher dispatchVideoFrame:frame isLocal:isLocal isFront:reverse isFull:isFullScreen];
-    }
-}
+//- (void)render:(QAVVideoFrame *)frame ofUser:(id<AVMultiUserAble>)user mirrorReverse:(BOOL)reverse isFullScreen:(BOOL)isFullScreen
+//{
+//    if ([_imageView isDisplay])
+//    {
+//        BOOL isLocal = frame.identifier.length;
+//        if (isLocal)
+//        {
+//            // 为多人的时候要处理
+//            frame.identifier = [[IMAPlatform sharedInstance].host imUserId];
+//        }
+//        
+//        [_frameDispatcher dispatchVideoFrame:frame isLocal:isLocal isFront:reverse isFull:isFullScreen];
+//    }
+//}
 
+//- (void)render:(QAVVideoFrame *)frame isHost:(BOOL)isHost mirrorReverse:(BOOL)reverse isFullScreen:(BOOL)isFullScreen
+//{
+//    if ([_imageView isDisplay])
+//    {
+//        BOOL isLocal = frame.identifier.length == 0;
+//        if (isLocal)
+//        {
+//            // 为多人的时候要处理
+//            frame.identifier = [[IMAPlatform sharedInstance].host imUserId];
+//        }
+//        
+//        [_frameDispatcher dispatchVideoFrame:frame isHost:isHost isLocal:isLocal isFront:reverse isFull:isFullScreen];
+//    }
+//}
 
 - (BOOL)switchRender:(id<AVMultiUserAble>)user withMainUser:(id<AVMultiUserAble>)mainuser
 {

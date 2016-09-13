@@ -51,7 +51,7 @@ typedef EQALNetworkType TCQALNetwork;
 // 被踢下线后，再重新登录
 - (void)offlineLogin;
 
-- (void)configHost:(TIMLoginParam *)param;
+- (void)configHost:(TIMLoginParam *)param completion:(CommonVoidBlock)block;
 
 - (void)changeToNetwork:(TCQALNetwork)work;
 @end

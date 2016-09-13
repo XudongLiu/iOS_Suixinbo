@@ -338,3 +338,13 @@ TCShow/TCAdapter/TCAVIMAdapter/Libs/xplatform.framework/PrivateHeaders/xpudptran
 TCShow/TCAdapter/TCAVIMAdapter/Libs/xplatform.framework/PrivateHeaders/xputil.h
 
 TCShow/TCAdapter/TCAVIMAdapter/Libs/xplatform.framework/PrivateHeaders/xpvector.h
+
+TCShow/TCAdapter/TCAVIMAdapter/Libs/QAVSDK.framework/_CodeSignature/CodeRequirements-1
+
+TCShow/TCAdapter/TCAVIMAdapter/AVSDK/.DS_Store
+
+TCShow/TCAdapter/TCAVIMAdapter/Libs/.DS_Store
+
+TCShow/TCAdapter/TCAVIMAdapter/Libs/QAVSDK.framework/.DS_Store
+
+TCShow/TCAdapter/TCAVIMAdapter/Libs/xplatform.framework/.DS_Store

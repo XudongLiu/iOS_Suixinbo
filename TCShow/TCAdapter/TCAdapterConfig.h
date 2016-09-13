@@ -216,7 +216,7 @@ static NSDateFormatter *kTCAVIMLogDateFormatter = nil;
 // 测速功能IMSDK 2.2才开放，到时再改为1
 // 是否集成网络测速功能 1:是 0:否
 #ifndef kIsMeasureSpeed
-#define kIsMeasureSpeed 0
+#define kIsMeasureSpeed 1
 #endif
 
 
@@ -234,8 +234,32 @@ static NSDateFormatter *kTCAVIMLogDateFormatter = nil;
 #define TCAVLog(log)
 #endif
 
+//==================================================================================
 
+#ifndef kTCInteractSubViewVerticalSize
+#define kTCInteractSubViewVerticalSize CGSizeMake(90, 120)
+#endif
+
+#ifndef kTCInteractSubViewHorizontalSize
+#define kTCInteractSubViewHorizontalSize CGSizeMake(120, 90)
+#endif
+
+//typedef enum iLiveRotationType
+//{
+//    //自动校正
+//    ILiveRotation_Auto = 0,
+//    //始终全屏显示
+//    ILiveRotation_FullScreen,
+//    //剪裁校正
+//    ILiveRotation_Crop,
+//    
+//}ILiveRotationType;
+
+#ifndef kAVGLCustomRenderViewRotateMode
+#define kAVGLCustomRenderViewRotateMode 0
+#endif
 
 #endif /* TCAdapterConfig_h */
+
 
 

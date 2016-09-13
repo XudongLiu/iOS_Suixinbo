@@ -834,7 +834,7 @@ static BOOL kRectHostCancelInteract = NO;
     // 添加推荐配置
     if (_isHost)
     {
-        return EAVCtrlState_Mic | EAVCtrlState_Speaker | EAVCtrlState_Camera;
+        return EAVCtrlState_All;
     }
     else
     {
@@ -1000,7 +1000,12 @@ static BOOL kRectHostCancelInteract = NO;
 - (void)onAppEnterForeground
 {
     [super onAppEnterForeground];
-    [self startRenderTimer];
+    
+    TCShowMultiUILiveViewController *vc = (TCShowMultiUILiveViewController *)_liveView;
+    if (vc.isPostLiveStart)
+    {
+        [self startRenderTimer];
+    }
 }
 
 - (void)startRenderTimer

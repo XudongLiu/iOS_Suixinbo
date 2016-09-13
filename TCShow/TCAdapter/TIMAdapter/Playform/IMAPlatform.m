@@ -162,7 +162,7 @@ static Class kHostClass = Nil;
     return _host.loginParm.config;
 }
 
-- (void)configHost:(TIMLoginParam *)param
+- (void)configHost:(TIMLoginParam *)param completion:(CommonVoidBlock)block
 {
     if (!_host)
     {
@@ -176,7 +176,7 @@ static Class kHostClass = Nil;
     [_host asyncProfile];
     
 #if kIsUseAVSDKAsLiveScene
-    [TCAVSharedContext configWithStartedContext:_host completion:nil];
+    [TCAVSharedContext configWithStartedContext:_host completion:block];
 #endif
 }
 

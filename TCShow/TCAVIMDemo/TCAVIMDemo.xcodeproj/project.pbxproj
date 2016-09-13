@@ -240,6 +240,7 @@
 		92C5A46F1D12D7AE00B321AC /* TCAVCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C5A46E1D12D7AE00B321AC /* TCAVCallViewController.m */; };
 		92DD6F2D1D2E07EB00B341E3 /* 48000_2.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 92DD6F2C1D2E07EB00B341E3 /* 48000_2.pcm */; };
 		92E67EEF1D5860CD00A4B57A /* RecordAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E67EEE1D5860CD00A4B57A /* RecordAudioViewController.m */; };
+		9BFB64341D780C8A00EF5479 /* AVGLCustomRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB64331D780C8A00EF5479 /* AVGLCustomRenderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -720,7 +721,6 @@
 		927600E21CFC465300BA9632 /* TCAVLiveRoomEngine+Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCAVLiveRoomEngine+Record.h"; sourceTree = "<group>"; };
 		927600E31CFC465300BA9632 /* TCAVLiveRoomEngine+Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TCAVLiveRoomEngine+Record.m"; sourceTree = "<group>"; };
 		92A3B8531D62B373006ECD6C /* xplatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = xplatform.framework; sourceTree = "<group>"; };
-
 		92B7E1E51CF455FD0008CC21 /* TCAVSharedContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAVSharedContext.h; sourceTree = "<group>"; };
 		92B7E1E61CF455FD0008CC21 /* TCAVSharedContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAVSharedContext.m; sourceTree = "<group>"; };
 		92C5A4631D12D75100B321AC /* TCAVCallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAVCallManager.h; sourceTree = "<group>"; };
@@ -735,6 +735,8 @@
 		92DD6F2C1D2E07EB00B341E3 /* 48000_2.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = 48000_2.pcm; sourceTree = "<group>"; };
 		92E67EED1D5860CD00A4B57A /* RecordAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordAudioViewController.h; sourceTree = "<group>"; };
 		92E67EEE1D5860CD00A4B57A /* RecordAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordAudioViewController.m; sourceTree = "<group>"; };
+		9BFB64321D780C8A00EF5479 /* AVGLCustomRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLCustomRenderView.h; sourceTree = "<group>"; };
+		9BFB64331D780C8A00EF5479 /* AVGLCustomRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGLCustomRenderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1571,6 +1573,7 @@
 		92377C381CEA0B31007AD22B /* AVViews */ = {
 			isa = PBXGroup;
 			children = (
+				9BFB64311D780C8A00EF5479 /* CustomAVOpenGL */,
 				92377C391CEA0B31007AD22B /* AVPreview */,
 				92377C401CEA0B31007AD22B /* AVUI */,
 				92377C471CEA0B31007AD22B /* AVViewHeader.h */,
@@ -1751,6 +1754,15 @@
 				92E67EEE1D5860CD00A4B57A /* RecordAudioViewController.m */,
 			);
 			path = "IMSDK2.2只录音频测试";
+			sourceTree = "<group>";
+		};
+		9BFB64311D780C8A00EF5479 /* CustomAVOpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				9BFB64321D780C8A00EF5479 /* AVGLCustomRenderView.h */,
+				9BFB64331D780C8A00EF5479 /* AVGLCustomRenderView.m */,
+			);
+			path = CustomAVOpenGL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1991,6 +2003,7 @@
 				92377D181CEA0B31007AD22B /* MultiAVIMMsgHandler.m in Sources */,
 				92377CDF1CEA0B31007AD22B /* UIImageView+WebCache.m in Sources */,
 				92377D2B1CEA0B31007AD22B /* IMAPlatform+IMSDKCallBack.m in Sources */,
+				9BFB64341D780C8A00EF5479 /* AVGLCustomRenderView.m in Sources */,
 				92377D2A1CEA0B31007AD22B /* IMALoginParam.m in Sources */,
 				92377CF61CEA0B31007AD22B /* TableSearchViewController.m in Sources */,
 				92377D2F1CEA0B31007AD22B /* IMAPlatformConfig.m in Sources */,
@@ -2139,7 +2152,7 @@
 					"$(SRCROOT)/../TCAdapter/TIMAdapter/Framework/WXApi",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo6s;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo8s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -2263,7 +2276,7 @@
 					"$(SRCROOT)/../TCAdapter/TIMAdapter/Framework/WXApi",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo6s;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo8s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -2295,7 +2308,7 @@
 					"$(SRCROOT)/../TCAdapter/TIMAdapter/Framework/WXApi",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo6s;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo8s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

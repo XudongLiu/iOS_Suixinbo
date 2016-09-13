@@ -780,13 +780,21 @@
     [self stopAudioTransmission];
 #endif
     
-    [self onAsyncStopPushStreamOnExitRoom:^(BOOL succ, NSString *tip) {
-        
-        [self onAsyncStopRecordOnExitRoom:^(BOOL succ, TCAVLiveRoomRecordRequest *req) {
-            [super exitLive];
+    if ([IMAPlatform sharedInstance].isConnected)
+    {
+        //
+        [self onAsyncStopPushStreamOnExitRoom:^(BOOL succ, NSString *tip) {
+            
+            [self onAsyncStopRecordOnExitRoom:^(BOOL succ, TCAVLiveRoomRecordRequest *req) {
+                [super exitLive];
+            }];
+            
         }];
-        
-    }];
+    }
+    else
+    {
+        [super exitLive];
+    }
     
 }
 

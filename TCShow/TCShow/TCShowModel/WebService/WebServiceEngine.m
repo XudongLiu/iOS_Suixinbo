@@ -63,15 +63,15 @@ static WebServiceEngine *_sharedEngine = nil;
         return;
     }
     
-    //    if (![[NetworkUtility sharedNetworkUtility] isReachable])
-    //    {
-    //        [[HUDHelper sharedInstance] tipMessage:@"网络异常"];
-    //        if (req.failHandler)
-    //        {
-    //            req.failHandler(req);
-    //        }
-    //        return;
-    //    }
+    if (![[IMAPlatform sharedInstance] isConnected])
+    {
+        [[HUDHelper sharedInstance] tipMessage:@"网络异常"];
+        if (req.failHandler)
+        {
+            req.failHandler(req);
+        }
+        return;
+    }
     
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         NSString *url = [req url];

@@ -8,9 +8,7 @@
 
 #import "FullPreviewViewController.h"
 
-@interface FullFrameDispatcher : TCAVFrameDispatcher
-@property (nonatomic, assign) unsigned int selfRotate;
-@end
+
 
 
 @implementation FullFrameDispatcher

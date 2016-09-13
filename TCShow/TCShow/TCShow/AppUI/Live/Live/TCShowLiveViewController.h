@@ -15,7 +15,7 @@
 @protected
     TCShowLiveView      *_liveView;
     NSTimer             *_heartTimer;
-    BOOL                _isPostLiveStart;    
+    BOOL                _isPostLiveStart;
 }
 
 @property (nonatomic, assign) BOOL isPostLiveStart;
