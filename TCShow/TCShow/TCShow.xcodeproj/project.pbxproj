@@ -258,7 +258,6 @@
 		9B0263AD1D4F36E900C7B5DD /* TCAVLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0263AC1D4F36E900C7B5DD /* TCAVLogManager.m */; };
 		9B21EFFB1D6B300B006ECD18 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B21EFFA1D6B300B006ECD18 /* CoreMotion.framework */; };
 		9BD9DD251D34C74700C65BDA /* IMAPlatform+TestSpeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9DD241D34C74700C65BDA /* IMAPlatform+TestSpeed.m */; };
-<<<<<<< HEAD
 		C3A92BC91D73DC9200A0B74C /* jpush-ios-2.1.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A92BC71D73DC9200A0B74C /* jpush-ios-2.1.8.a */; };
 		C3A92BCB1D73DD1800A0B74C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A92BCA1D73DD1800A0B74C /* CFNetwork.framework */; };
 		C3A92BCE1D73DD3700A0B74C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A92BCC1D73DD3700A0B74C /* CoreFoundation.framework */; };
@@ -275,9 +274,7 @@
 		C3CAB7D31D7FE560003CBB00 /* VideoListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CAB7D11D7FE560003CBB00 /* VideoListTableViewController.xib */; };
 		C3CAB7D71D7FE57E003CBB00 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CAB7D51D7FE57E003CBB00 /* VideoTableViewCell.m */; };
 		C3CAB7D81D7FE57E003CBB00 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CAB7D61D7FE57E003CBB00 /* VideoTableViewCell.xib */; };
-=======
 		9BFB64281D7800B400EF5479 /* AVGLCustomRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB64271D7800B400EF5479 /* AVGLCustomRenderView.m */; };
->>>>>>> zhaoyang21cn/master
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -823,7 +820,6 @@
 		9B21EFFA1D6B300B006ECD18 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		9BD9DD231D34C74700C65BDA /* IMAPlatform+TestSpeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMAPlatform+TestSpeed.h"; sourceTree = "<group>"; };
 		9BD9DD241D34C74700C65BDA /* IMAPlatform+TestSpeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMAPlatform+TestSpeed.m"; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		C3A92BC71D73DC9200A0B74C /* jpush-ios-2.1.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "jpush-ios-2.1.8.a"; path = "huofanlib/jiguang/jpush-ios-2.1.8.a"; sourceTree = "<group>"; };
 		C3A92BC81D73DC9200A0B74C /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPUSHService.h; path = huofanlib/jiguang/JPUSHService.h; sourceTree = "<group>"; };
 		C3A92BCA1D73DD1800A0B74C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -848,10 +844,8 @@
 		C3CAB7D41D7FE57E003CBB00 /* VideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoTableViewCell.h; path = VideoList/VideoTableViewCell.h; sourceTree = "<group>"; };
 		C3CAB7D51D7FE57E003CBB00 /* VideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoTableViewCell.m; path = VideoList/VideoTableViewCell.m; sourceTree = "<group>"; };
 		C3CAB7D61D7FE57E003CBB00 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VideoTableViewCell.xib; path = VideoList/VideoTableViewCell.xib; sourceTree = "<group>"; };
-=======
 		9BFB64261D7800B400EF5479 /* AVGLCustomRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLCustomRenderView.h; sourceTree = "<group>"; };
 		9BFB64271D7800B400EF5479 /* AVGLCustomRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGLCustomRenderView.m; sourceTree = "<group>"; };
->>>>>>> zhaoyang21cn/master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -859,14 +853,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				C3AB203F1D755715000DB6D1 /* StoreKit.framework in Frameworks */,
 				C3A92BCE1D73DD3700A0B74C /* CoreFoundation.framework in Frameworks */,
 				C3A92BCF1D73DD3700A0B74C /* CoreGraphics.framework in Frameworks */,
 				C3A92BCB1D73DD1800A0B74C /* CFNetwork.framework in Frameworks */,
-=======
 				9B21EFFB1D6B300B006ECD18 /* CoreMotion.framework in Frameworks */,
->>>>>>> zhaoyang21cn/master
 				92DC9D051CBB75C600702263 /* CoreTelephony.framework in Frameworks */,
 				92224AE61CEB12100050404A /* libresolv.tbd in Frameworks */,
 				92DC9D091CBB75D700702263 /* MobileCoreServices.framework in Frameworks */,
@@ -1896,14 +1887,11 @@
 		92DC9D0A1CBB75E000702263 /* SystemLibrary */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				C3AB203E1D755715000DB6D1 /* StoreKit.framework */,
 				C3A92BCC1D73DD3700A0B74C /* CoreFoundation.framework */,
 				C3A92BCD1D73DD3700A0B74C /* CoreGraphics.framework */,
 				C3A92BCA1D73DD1800A0B74C /* CFNetwork.framework */,
-=======
 				9B21EFFA1D6B300B006ECD18 /* CoreMotion.framework */,
->>>>>>> zhaoyang21cn/master
 				92224AE51CEB12100050404A /* libresolv.tbd */,
 				92DC9D081CBB75D700702263 /* MobileCoreServices.framework */,
 				92DC9D061CBB75CE00702263 /* CoreText.framework */,
@@ -1935,7 +1923,6 @@
 			path = UP;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		C330A70D1D70426A00194107 /* houfanlib */ = {
 			isa = PBXGroup;
 			children = (
@@ -1988,7 +1975,6 @@
 				C3CAB7D61D7FE57E003CBB00 /* VideoTableViewCell.xib */,
 			);
 			name = VideoList;
-=======
 		9BFB64251D7800B400EF5479 /* CustomAVOpenGL */ = {
 			isa = PBXGroup;
 			children = (
@@ -1996,7 +1982,6 @@
 				9BFB64271D7800B400EF5479 /* AVGLCustomRenderView.m */,
 			);
 			path = CustomAVOpenGL;
->>>>>>> zhaoyang21cn/master
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2437,11 +2422,7 @@
 				OTHER_CFLAGS = "-O0";
 				OTHER_CPLUSPLUSFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
-<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = cn.bjlmjc.huofan;
-=======
-				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo8s;
->>>>>>> zhaoyang21cn/master
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2581,11 +2562,7 @@
 				OTHER_CFLAGS = "-O0";
 				OTHER_CPLUSPLUSFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
-<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = cn.bjlmjc.huofan;
-=======
-				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo8s;
->>>>>>> zhaoyang21cn/master
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f863e4dc-7ca1-41cb-b396-a4275c8c235c";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2624,11 +2601,7 @@
 				OTHER_CFLAGS = "-O0";
 				OTHER_CPLUSPLUSFLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
-<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = cn.bjlmjc.huofan;
-=======
-				PRODUCT_BUNDLE_IDENTIFIER = com.mm40qq.TCShowDemo8s;
->>>>>>> zhaoyang21cn/master
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
