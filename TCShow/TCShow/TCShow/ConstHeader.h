@@ -31,7 +31,7 @@
 // 如果用户在随心播工程上更新了AppID,AccountType，记得将kIsTCShowSupportIMCustom改为0
 // 用户更新为自己的app配置
 // 以及IMSDK相关的配置
-#define kSdkAppId       @"1400013798"
+#define kSdkAppId    @"1400013798"
 #define kSdkAccountType @"7053"
 
 // 用户App(非随心播)改成0
