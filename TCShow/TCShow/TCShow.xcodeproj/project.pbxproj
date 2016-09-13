@@ -256,7 +256,6 @@
 		92E20EF91CEEDA3C00DBBAE9 /* UserProtocolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92E20EF61CEEDA3C00DBBAE9 /* UserProtocolViewController.xib */; };
 		92F850131CF80396006EB63A /* TCShowAVParView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F850121CF80396006EB63A /* TCShowAVParView.m */; };
 		9B0263AD1D4F36E900C7B5DD /* TCAVLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0263AC1D4F36E900C7B5DD /* TCAVLogManager.m */; };
-		9B21EFFB1D6B300B006ECD18 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B21EFFA1D6B300B006ECD18 /* CoreMotion.framework */; };
 		9BD9DD251D34C74700C65BDA /* IMAPlatform+TestSpeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9DD241D34C74700C65BDA /* IMAPlatform+TestSpeed.m */; };
 		C3A92BC91D73DC9200A0B74C /* jpush-ios-2.1.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A92BC71D73DC9200A0B74C /* jpush-ios-2.1.8.a */; };
 		C3A92BCB1D73DD1800A0B74C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A92BCA1D73DD1800A0B74C /* CFNetwork.framework */; };
@@ -274,7 +273,6 @@
 		C3CAB7D31D7FE560003CBB00 /* VideoListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CAB7D11D7FE560003CBB00 /* VideoListTableViewController.xib */; };
 		C3CAB7D71D7FE57E003CBB00 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CAB7D51D7FE57E003CBB00 /* VideoTableViewCell.m */; };
 		C3CAB7D81D7FE57E003CBB00 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CAB7D61D7FE57E003CBB00 /* VideoTableViewCell.xib */; };
-		9BFB64281D7800B400EF5479 /* AVGLCustomRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB64271D7800B400EF5479 /* AVGLCustomRenderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -817,7 +815,6 @@
 		92F850121CF80396006EB63A /* TCShowAVParView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCShowAVParView.m; sourceTree = "<group>"; };
 		9B0263AB1D4F36E800C7B5DD /* TCAVLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAVLogManager.h; sourceTree = "<group>"; };
 		9B0263AC1D4F36E900C7B5DD /* TCAVLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAVLogManager.m; sourceTree = "<group>"; };
-		9B21EFFA1D6B300B006ECD18 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		9BD9DD231D34C74700C65BDA /* IMAPlatform+TestSpeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IMAPlatform+TestSpeed.h"; sourceTree = "<group>"; };
 		9BD9DD241D34C74700C65BDA /* IMAPlatform+TestSpeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IMAPlatform+TestSpeed.m"; sourceTree = "<group>"; };
 		C3A92BC71D73DC9200A0B74C /* jpush-ios-2.1.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "jpush-ios-2.1.8.a"; path = "huofanlib/jiguang/jpush-ios-2.1.8.a"; sourceTree = "<group>"; };
@@ -844,8 +841,6 @@
 		C3CAB7D41D7FE57E003CBB00 /* VideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoTableViewCell.h; path = VideoList/VideoTableViewCell.h; sourceTree = "<group>"; };
 		C3CAB7D51D7FE57E003CBB00 /* VideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoTableViewCell.m; path = VideoList/VideoTableViewCell.m; sourceTree = "<group>"; };
 		C3CAB7D61D7FE57E003CBB00 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VideoTableViewCell.xib; path = VideoList/VideoTableViewCell.xib; sourceTree = "<group>"; };
-		9BFB64261D7800B400EF5479 /* AVGLCustomRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLCustomRenderView.h; sourceTree = "<group>"; };
-		9BFB64271D7800B400EF5479 /* AVGLCustomRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGLCustomRenderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -857,7 +852,6 @@
 				C3A92BCE1D73DD3700A0B74C /* CoreFoundation.framework in Frameworks */,
 				C3A92BCF1D73DD3700A0B74C /* CoreGraphics.framework in Frameworks */,
 				C3A92BCB1D73DD1800A0B74C /* CFNetwork.framework in Frameworks */,
-				9B21EFFB1D6B300B006ECD18 /* CoreMotion.framework in Frameworks */,
 				92DC9D051CBB75C600702263 /* CoreTelephony.framework in Frameworks */,
 				92224AE61CEB12100050404A /* libresolv.tbd in Frameworks */,
 				92DC9D091CBB75D700702263 /* MobileCoreServices.framework in Frameworks */,
@@ -1672,7 +1666,6 @@
 		92D2CB331CC4E4D200501760 /* AVViews */ = {
 			isa = PBXGroup;
 			children = (
-				9BFB64251D7800B400EF5479 /* CustomAVOpenGL */,
 				92D2CB341CC4E4D200501760 /* AVPreview */,
 				92D2CB391CC4E4D200501760 /* AVUI */,
 				92D2CB401CC4E4D200501760 /* AVViewHeader.h */,
@@ -1891,7 +1884,6 @@
 				C3A92BCC1D73DD3700A0B74C /* CoreFoundation.framework */,
 				C3A92BCD1D73DD3700A0B74C /* CoreGraphics.framework */,
 				C3A92BCA1D73DD1800A0B74C /* CFNetwork.framework */,
-				9B21EFFA1D6B300B006ECD18 /* CoreMotion.framework */,
 				92224AE51CEB12100050404A /* libresolv.tbd */,
 				92DC9D081CBB75D700702263 /* MobileCoreServices.framework */,
 				92DC9D061CBB75CE00702263 /* CoreText.framework */,
@@ -1975,13 +1967,6 @@
 				C3CAB7D61D7FE57E003CBB00 /* VideoTableViewCell.xib */,
 			);
 			name = VideoList;
-		9BFB64251D7800B400EF5479 /* CustomAVOpenGL */ = {
-			isa = PBXGroup;
-			children = (
-				9BFB64261D7800B400EF5479 /* AVGLCustomRenderView.h */,
-				9BFB64271D7800B400EF5479 /* AVGLCustomRenderView.m */,
-			);
-			path = CustomAVOpenGL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2123,7 +2108,6 @@
 				92D2CC1C1CC4E4D200501760 /* IMAPlatform+IMSDKCallBack.m in Sources */,
 				92D2CBBC1CC4E4D200501760 /* NSDictionary+RequestEncoding.m in Sources */,
 				929408BB1CD85933004A0FE2 /* UploadImageHelper.m in Sources */,
-				9BFB64281D7800B400EF5479 /* AVGLCustomRenderView.m in Sources */,
 				92D2CB851CC4E4D200501760 /* UICollectionViewController+ADFlipTransition.m in Sources */,
 				92D2CBE01CC4E4D200501760 /* NavigationViewController.m in Sources */,
 				929190D81CC8EF14001DC7CC /* TCShowMultiLiveView.m in Sources */,
@@ -2325,7 +2309,6 @@
 		92D383541CDA37C80001EA04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TCShow/TCShow-Prefix.pch";
@@ -2338,7 +2321,6 @@
 		92D383551CDA37C80001EA04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TCShow/TCShow-Prefix.pch";
