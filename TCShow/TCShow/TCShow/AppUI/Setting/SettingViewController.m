@@ -82,6 +82,12 @@
         [alert show];
     }];
     [array addObject:about];
+    
+    MenuItem *purchase = [[MenuItem alloc]initWithTitle:@" 购买金币" icon:nil action: ^(id<MenuAbleItem>menu){
+        IAPViewController *vc = [[IAPViewController alloc] init];
+        [[AppDelegate sharedAppDelegate] pushViewController:vc];
+    }];
+    [array addObject:purchase];
 
 #if kIsMeasureSpeed
     MenuItem *speed = [[MenuItem alloc] initWithTitle:@"网络测速" icon:nil action:^(id<MenuAbleItem> menu) {

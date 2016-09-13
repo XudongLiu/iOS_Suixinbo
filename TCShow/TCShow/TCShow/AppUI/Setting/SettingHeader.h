@@ -15,5 +15,6 @@
 
 #import "SettingViewController.h"
 
+#import "IAPViewController.h"
 
 #endif /* SettingHeader_h */

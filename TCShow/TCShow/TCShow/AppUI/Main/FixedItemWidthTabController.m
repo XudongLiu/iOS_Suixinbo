@@ -8,6 +8,7 @@
 
 #import "FixedItemWidthTabController.h"
 #import "LivingListViewController.h"
+#import "VideoListTableViewController.h"
 
 @interface FixedItemWidthTabController ()
 
@@ -50,7 +51,8 @@
 }
 
 - (void)initViewControllers {
-    LivingListViewController *controller1 = [[LivingListViewController alloc] init];
+    //LivingListViewController *controller1 = [[LivingListViewController alloc] init];
+    VideoListTableViewController *controller1 = [[VideoListTableViewController alloc]init];
     controller1.yp_tabItemTitle = @"热点视频";
     
     

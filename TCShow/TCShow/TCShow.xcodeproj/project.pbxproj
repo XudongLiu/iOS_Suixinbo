@@ -265,8 +265,14 @@
 		C3A92BD81D74005200A0B74C /* YPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A92BD31D74005200A0B74C /* YPTabBar.m */; };
 		C3A92BD91D74005200A0B74C /* YPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A92BD51D74005200A0B74C /* YPTabBarController.m */; };
 		C3A92BDA1D74005200A0B74C /* YPTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A92BD71D74005200A0B74C /* YPTabItem.m */; };
-		C3A92BDE1D74011C00A0B74C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A92BDD1D74011C00A0B74C /* MainViewController.m */; };
 		C3A92BE11D74023E00A0B74C /* FixedItemWidthTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A92BE01D74023E00A0B74C /* FixedItemWidthTabController.m */; };
+		C3AB203C1D754DFE000DB6D1 /* IAPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AB203A1D754DFE000DB6D1 /* IAPViewController.m */; };
+		C3AB203D1D754DFE000DB6D1 /* IAPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3AB203B1D754DFE000DB6D1 /* IAPViewController.xib */; };
+		C3AB203F1D755715000DB6D1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3AB203E1D755715000DB6D1 /* StoreKit.framework */; };
+		C3CAB7D21D7FE560003CBB00 /* VideoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CAB7D01D7FE560003CBB00 /* VideoListTableViewController.m */; };
+		C3CAB7D31D7FE560003CBB00 /* VideoListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CAB7D11D7FE560003CBB00 /* VideoListTableViewController.xib */; };
+		C3CAB7D71D7FE57E003CBB00 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CAB7D51D7FE57E003CBB00 /* VideoTableViewCell.m */; };
+		C3CAB7D81D7FE57E003CBB00 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3CAB7D61D7FE57E003CBB00 /* VideoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -823,10 +829,18 @@
 		C3A92BD51D74005200A0B74C /* YPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPTabBarController.m; path = huofanlib/YPTabBarController/YPTabBarController.m; sourceTree = "<group>"; };
 		C3A92BD61D74005200A0B74C /* YPTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPTabItem.h; path = huofanlib/YPTabBarController/YPTabItem.h; sourceTree = "<group>"; };
 		C3A92BD71D74005200A0B74C /* YPTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPTabItem.m; path = huofanlib/YPTabBarController/YPTabItem.m; sourceTree = "<group>"; };
-		C3A92BDC1D74011C00A0B74C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		C3A92BDD1D74011C00A0B74C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C3A92BDF1D74023E00A0B74C /* FixedItemWidthTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedItemWidthTabController.h; sourceTree = "<group>"; };
 		C3A92BE01D74023E00A0B74C /* FixedItemWidthTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedItemWidthTabController.m; sourceTree = "<group>"; };
+		C3AB20391D754DFE000DB6D1 /* IAPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAPViewController.h; path = IAP/IAPViewController.h; sourceTree = "<group>"; };
+		C3AB203A1D754DFE000DB6D1 /* IAPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IAPViewController.m; path = IAP/IAPViewController.m; sourceTree = "<group>"; };
+		C3AB203B1D754DFE000DB6D1 /* IAPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IAPViewController.xib; path = IAP/IAPViewController.xib; sourceTree = "<group>"; };
+		C3AB203E1D755715000DB6D1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C3CAB7CF1D7FE560003CBB00 /* VideoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoListTableViewController.h; path = VideoList/VideoListTableViewController.h; sourceTree = "<group>"; };
+		C3CAB7D01D7FE560003CBB00 /* VideoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoListTableViewController.m; path = VideoList/VideoListTableViewController.m; sourceTree = "<group>"; };
+		C3CAB7D11D7FE560003CBB00 /* VideoListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VideoListTableViewController.xib; path = VideoList/VideoListTableViewController.xib; sourceTree = "<group>"; };
+		C3CAB7D41D7FE57E003CBB00 /* VideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoTableViewCell.h; path = VideoList/VideoTableViewCell.h; sourceTree = "<group>"; };
+		C3CAB7D51D7FE57E003CBB00 /* VideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoTableViewCell.m; path = VideoList/VideoTableViewCell.m; sourceTree = "<group>"; };
+		C3CAB7D61D7FE57E003CBB00 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VideoTableViewCell.xib; path = VideoList/VideoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -834,6 +848,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3AB203F1D755715000DB6D1 /* StoreKit.framework in Frameworks */,
 				C3A92BCE1D73DD3700A0B74C /* CoreFoundation.framework in Frameworks */,
 				C3A92BCF1D73DD3700A0B74C /* CoreGraphics.framework in Frameworks */,
 				C3A92BCB1D73DD1800A0B74C /* CFNetwork.framework in Frameworks */,
@@ -875,6 +890,8 @@
 		92562B731CBBC4A2007595F9 /* AppUI */ = {
 			isa = PBXGroup;
 			children = (
+				C3CAB7CE1D7FE4FE003CBB00 /* VideoList */,
+				C3AB20381D754DD0000DB6D1 /* IAP */,
 				92562BC51CBBCC07007595F9 /* AppUIHeader.h */,
 				92E20EF21CEEDA3C00DBBAE9 /* UP */,
 				92BC94531CBDF95A003D9EF1 /* Publish */,
@@ -907,8 +924,6 @@
 				92562B921CBBC4A2007595F9 /* LivingListViewController.m */,
 				92BC94311CBDEDC0003D9EF1 /* LiveListTableViewCell.h */,
 				92BC94321CBDEDC0003D9EF1 /* LiveListTableViewCell.m */,
-				C3A92BDC1D74011C00A0B74C /* MainViewController.h */,
-				C3A92BDD1D74011C00A0B74C /* MainViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1865,6 +1880,7 @@
 		92DC9D0A1CBB75E000702263 /* SystemLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				C3AB203E1D755715000DB6D1 /* StoreKit.framework */,
 				C3A92BCC1D73DD3700A0B74C /* CoreFoundation.framework */,
 				C3A92BCD1D73DD3700A0B74C /* CoreGraphics.framework */,
 				C3A92BCA1D73DD1800A0B74C /* CFNetwork.framework */,
@@ -1928,6 +1944,29 @@
 				C3A92BD71D74005200A0B74C /* YPTabItem.m */,
 			);
 			name = YPTabBarController;
+			sourceTree = "<group>";
+		};
+		C3AB20381D754DD0000DB6D1 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				C3AB20391D754DFE000DB6D1 /* IAPViewController.h */,
+				C3AB203A1D754DFE000DB6D1 /* IAPViewController.m */,
+				C3AB203B1D754DFE000DB6D1 /* IAPViewController.xib */,
+			);
+			name = IAP;
+			sourceTree = "<group>";
+		};
+		C3CAB7CE1D7FE4FE003CBB00 /* VideoList */ = {
+			isa = PBXGroup;
+			children = (
+				C3CAB7CF1D7FE560003CBB00 /* VideoListTableViewController.h */,
+				C3CAB7D01D7FE560003CBB00 /* VideoListTableViewController.m */,
+				C3CAB7D11D7FE560003CBB00 /* VideoListTableViewController.xib */,
+				C3CAB7D41D7FE57E003CBB00 /* VideoTableViewCell.h */,
+				C3CAB7D51D7FE57E003CBB00 /* VideoTableViewCell.m */,
+				C3CAB7D61D7FE57E003CBB00 /* VideoTableViewCell.xib */,
+			);
+			name = VideoList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2001,8 +2040,11 @@
 				92DC9B401CBB59FB00702263 /* Assets.xcassets in Resources */,
 				92D2CC141CC4E4D200501760 /* TLSUI.bundle in Resources */,
 				92D3835D1CDA386C0001EA04 /* TCShow-DailyBuild-Info.plist in Resources */,
+				C3CAB7D31D7FE560003CBB00 /* VideoListTableViewController.xib in Resources */,
 				C3A92BD11D73DD8800A0B74C /* PushConfig.plist in Resources */,
+				C3AB203D1D754DFE000DB6D1 /* IAPViewController.xib in Resources */,
 				92BC94391CBDF3C7003D9EF1 /* default_cover@2x.jpg in Resources */,
+				C3CAB7D81D7FE57E003CBB00 /* VideoTableViewCell.xib in Resources */,
 				92E20EF71CEEDA3C00DBBAE9 /* UserProtocol.html in Resources */,
 				92D2CC0B1CC4E4D200501760 /* Localizable.strings in Resources */,
 				92D2CC131CC4E4D200501760 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
@@ -2038,7 +2080,6 @@
 				92D2CBB11CC4E4D200501760 /* MoreTableView.m in Sources */,
 				9BD9DD251D34C74700C65BDA /* IMAPlatform+TestSpeed.m in Sources */,
 				929BCA241CBF706800482611 /* TCShowLiveView.m in Sources */,
-				C3A92BDE1D74011C00A0B74C /* MainViewController.m in Sources */,
 				92B7E1E41CF44E480008CC21 /* TCAVSharedContext.m in Sources */,
 				925941C61CC7B76C00227DD7 /* AVIMRunLoop.m in Sources */,
 				92D2CBC41CC4E4D200501760 /* PathUtility.m in Sources */,
@@ -2109,6 +2150,7 @@
 				92560A7A1CE45EE000622051 /* UserProfileView.m in Sources */,
 				92D2CBCA1CC4E4D200501760 /* SDWebImageDownloader.m in Sources */,
 				92D2CB991CC4E4D200501760 /* NSObject+CommonBlock.m in Sources */,
+				C3CAB7D21D7FE560003CBB00 /* VideoListTableViewController.m in Sources */,
 				92D2CBB21CC4E4D200501760 /* FBKVOController.m in Sources */,
 				92D2CBBA1CC4E4D200501760 /* NSData+MKBase64.m in Sources */,
 				92D2CBA01CC4E4D200501760 /* UIImage+TintColor.m in Sources */,
@@ -2119,6 +2161,7 @@
 				92D2C9B71CC4D60D00501760 /* TCShowLiveMsg.m in Sources */,
 				92D2CBF21CC4E4D200501760 /* TCAVMultiLiveRoomEngine.m in Sources */,
 				92DC9B381CBB59FB00702263 /* AppDelegate.m in Sources */,
+				C3CAB7D71D7FE57E003CBB00 /* VideoTableViewCell.m in Sources */,
 				92D2CC1F1CC4E4D200501760 /* IMAPlatform.m in Sources */,
 				92D2CBF71CC4E4D200501760 /* AVGLRenderView+Animation.m in Sources */,
 				92562BBB1CBBC4A2007595F9 /* SettingViewController.m in Sources */,
@@ -2183,6 +2226,7 @@
 				92D2CBF11CC4E4D200501760 /* TCAVLiveRoomEngine.m in Sources */,
 				92D2CC191CC4E4D200501760 /* IMALoginViewController.m in Sources */,
 				C3A92BE11D74023E00A0B74C /* FixedItemWidthTabController.m in Sources */,
+				C3AB203C1D754DFE000DB6D1 /* IAPViewController.m in Sources */,
 				92562BBC1CBBC4A2007595F9 /* TarBarController.m in Sources */,
 				92D2CBA61CC4E4D200501760 /* UIView+Glow.m in Sources */,
 				92D2CBB41CC4E4D200501760 /* FontHelper.m in Sources */,
